@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" data-theme = 'dark'>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payyo</title>
+    <!-- link of web favicon -->
+    <link rel="shortcut icon" href="./img/payoo.png" type="image/x-icon">
+    <!-- link of tailwind + daisy ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- google fonts-- manrope  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
+    <!-- google icons -->
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+
+
+    <!-- styles of manrope font -->
+   <style>
+ 
+ .manrope-font {
+     font-family: "Manrope", sans-serif;
+   }
+ 
+ 
+   </style>
+</head>
+<body class="manrope-font">
+  
+
+  <main>
+
+    <section class="flex justify-center items-center">
+
+
+      <div class="mockup-phone ">
+        <div class="mockup-phone-camera"></div>
+        <div class="mockup-phone-display text-white grid place-content-center bg-white px-4">
+          <!-- banalce area -->
+          <div class="stats shadow">
+            <div class="stat bg-orange-500 flex justify-between items-center">
+              <div class="stat-desc manrope-font text-xl font-extrabold text-white">Avilable Balance:</div>
+              <div id="main-acc-balance" class="stat-value">10000</div>
+            </div>
+          </div>
+          <div class="divider divider-success"></div>
+
+          <!-- button area -->
+
+          <div class="grid grid-cols-2 text-center gap-4">
+
+            <div>
+              <button id="addmoney-btn" class="btn text-[17px] btn-primary btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl"><i class="material-icons">add_card</i>add money</button>
+            </div>
+
+            <div>
+              <button id="cashout-btn" class="btn text-[18px] btn-warning btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl"><i class="material-icons">send</i>cash out</button>
+            </div>
+
+            <div>
+              <button id="transaction-btn" class="btn text-[18px] btn-success btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl"><i class="material-icons">receipt</i>Transaction</button>
+            </div>
+
+            <!-- <div class="">
+              <button class="btn btn-secondary text-[18px] btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl"><i class="material-icons">payments</i>Pay Bill</button>
+            </div> -->
+
+          </div>
+          <div class="divider divider-success"></div>
+
+          <!-- add money form -->
+
+          <div id="addmoney-form" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl mt-9">
+            <div class="card-body bg-orange-400">
+              <h5 class="text-lg manrope-font font-bold text-white">Add Money</h5>
+              <fieldset class="fieldset">
+                <label  class="label font-bold">Amount</label>
+                <input id="add-money-input" type="text" class="input" />
+                <label class="label font-bold">Pin</label>
+                <input id="add-pin-input"  type="password" class="input" />
+                <button id="add-money-btn" class="btn btn-primary mt-4">Add Money</button>
+              </fieldset>
+            </div>
+          </div>
+
+          <!-- cashout section -->
+
+          <div id="cashout-form" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl mt-9">
+            <div class="card-body bg-orange-400">
+              <h5 class="text-lg manrope-font font-bold text-white">Cash Out</h5>
+              <fieldset class="fieldset">
+                <label  class="label font-bold">Amount</label>
+                <input id="cashout-input" type="text" class="input" />
+                <label class="label font-bold">Pin</label>
+                <input id="cash-pin-input"  type="password" class="input" />
+                <button id="cash-out-btn" class="btn btn-warning mt-4">cash out</button>
+              </fieldset>
+            </div>
+          </div>
+
+          <!-- section of transaction history -->
+
+          <section id="transaction-history" class="hidden">
+            <div>
+              <h3>Transaction Record</h3>
+            </div>
+
+
+          </section>
+
+
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- script -->
+   <script src="js/utilites.js"></script>
+   <script src="js/addmoney.js"></script>
+   <script src="js/togle.js"></script>
+
+</body>
+
+</html>

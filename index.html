@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" data-theme ='dark'>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payyo</title>
+  <!-- link of web favicon -->
+   <link rel="shortcut icon" href="./img/payoo.png" type="image/x-icon">
+   <!-- link of tailwind + daisy ui -->
+   <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+   <!-- google fonts-- manrope  -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+   <!-- styles of manrope font -->
+  <style>
+
+.manrope-font {
+    font-family: "Manrope", sans-serif;
+  }
+
+
+  </style>
+
+
+</head>
+<body class="manrope-font">
+  
+<!-- header -->
+
+<main>
+
+
+  <div class="flex justify-center items-center">
+    <div class="mockup-phone">
+      <div class="mockup-phone-camera"></div>
+      <div class="mockup-phone-display text-white grid place-content-center bg-white">
+
+        <!-- form section start -->
+
+        <div class="">
+        <h1 class="text-2xl text-center mb-3 font-extrabold text-yellow-500 manrope-font">Payyo Login</h1>
+        <div class="card bg-rose-400 w-full max-w-sm shrink-0 shadow-2xl">
+          <div class="card-body">
+            <fieldset class="fieldset">
+              <label class="label">Phone</label>
+              <input id="login-phone" type="phone" class="input" placeholder="enter your phone number" />
+              <label class="label">Password</label>
+              <input id="login-password" type="password" class="input" placeholder="Password" />
+              <div><a class="link link-hover">Forgot password?</a></div>
+              <button id="login-btn" class="btn btn-neutral mt-4">Login</button>
+            </fieldset>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+
+
+<!-- script section start -->
+ <script src="js/utilites.js"></script>
+ <script src="js/login.js"></script>
+
+</body>
+</html>
